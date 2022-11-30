@@ -7,3 +7,6 @@ let lowerCaseArray = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l"
 let numberArray = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
 let specialCharacterArray = ["`", "~", "!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "-", "_", "+", "=", "[", "{", "]", "}", "|", "/", "'", ":", ";", "<", ",", ">", ".", "?"];
 //arrays of characters
+
+var passwordArray = [];
+//passwordArray starts empty in order to add other password requirements (such as lower,upper,number,special character types into the password
