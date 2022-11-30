@@ -47,3 +47,27 @@ function generatePassword() {
   console.log(lowerCaseChoice);
   console.log(numberChoice);
   console.log(specialCharacterChoice);
+
+  if (
+    !upperCaseChoice && !lowerCaseChoice && !specialCharacterChoice && !numberChoice
+  ) {
+    alert("You must meet all character types");
+  }
+
+  if (upperCaseChoice) {
+    passwordArray.concat(upperCaseArray);
+  }
+
+  if (lowerCaseChoice) {
+    passwordArray.concat(lowerCaseArray);
+  }
+
+  if (specialCharacterChoice) {
+    passwordArray.concat(specialCharacterArray);
+  }
+
+  if (numberChoice) {
+    passwordArray.concat(numberArray);
+  }
+
+  
