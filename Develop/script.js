@@ -13,6 +13,16 @@ var passwordArray = [];
 
 // Write password to the #password input
 function generatePassword() {
-  var passwordMessage = "Your password must contain 8 - 128 characters.";
+  var passwordMessage = "Your password must contain 8 - 128 characters. Please pick a number between this interval.";
   var userInput = prompt(passwordMessage);
   //pop up message for when window is first opened
+
+  while ((userInput !== null && isNaN(userInput)) || userInput < 8 || userInput > 128) {
+    alert("This doesn't meet password requirement. Try again.");
+    userInput = prompt(passwordMessage);
+  }
+  //password must have more than 8 characters and less than 128 character.
+  //password will not generate if these requirements aren't met
+
+  console.log(userInput);
+
