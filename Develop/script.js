@@ -10,3 +10,9 @@ let specialCharacterArray = ["`", "~", "!", "@", "#", "$", "%", "^", "&", "*", "
 
 var passwordArray = [];
 //passwordArray starts empty in order to add other password requirements (such as lower,upper,number,special character types into the password
+
+// Write password to the #password input
+function generatePassword() {
+  var passwordMessage = "Your password must contain 8 - 128 characters.";
+  var userInput = prompt(passwordMessage);
+  //pop up message for when window is first opened
