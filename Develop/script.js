@@ -13,7 +13,7 @@ var passwordArray = [];
 
 // Write password to the #password input
 function generatePassword() {
-  var passwordMessage = "Your password must contain 8 - 128 characters. Please pick a number between this interval.";
+  var passwordMessage = "Your password must contain 8 - 128 characters.";
   var userInput = prompt(passwordMessage);
   //pop up message for when window is first opened
 
@@ -26,3 +26,24 @@ function generatePassword() {
 
   console.log(userInput);
 
+
+  var upperCaseChoice = confirm(
+    "Would you want to include an uppercase letter in your password?"
+  );
+
+  var lowerCaseChoice = confirm(
+    "Would you want to include a lowercase letter in your password?"
+  );
+
+  var numberChoice = confirm(
+    "Would you want to include a number in your password?"
+  );
+
+  var specialCharacterChoice = confirm(
+    "Would you want to include a special character in your password?"
+  );
+
+  console.log(upperCaseChoice);
+  console.log(lowerCaseChoice);
+  console.log(numberChoice);
+  console.log(specialCharacterChoice);
