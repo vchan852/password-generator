@@ -10,6 +10,6 @@ This application allows employees to generate random passwords based on criteria
 
 ## Images
 
-![Website Preview](assets/images/preview.png)
+![Website Preview](Assets/preview.png)
 
 Picture displays the preview of the password generator.
