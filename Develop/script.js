@@ -55,19 +55,19 @@ function generatePassword() {
   }
 
   if (upperCaseChoice) {
-    passwordArray.concat(upperCaseArray);
+    passwordArray = passwordArray.concat(upperCaseArray);
   }
 
   if (lowerCaseChoice) {
-    passwordArray.concat(lowerCaseArray);
+    passwordArray = passwordArray.concat(lowerCaseArray);
   }
 
   if (specialCharacterChoice) {
-    passwordArray.concat(specialCharacterArray);
+    passwordArray = passwordArray.concat(specialCharacterArray);
   }
 
   if (numberChoice) {
-    passwordArray.concat(numberArray);
+    passwordArray = passwordArray.concat(numberArray);
   }
 
-  
+  console.log(passwordArray);
